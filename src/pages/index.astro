@@ -1,0 +1,78 @@
+---
+import Layout from "../layouts/Entrar.astro";
+---
+
+<Layout title="Inicio de Sesión">
+	<div
+		class="flex justify-center absolute top-0 z-[-2] h-screen w-screen bg-zinc-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(186,65,65,0.556),rgba(255,255,255,0))]"
+	>
+			<div
+				class="max-w-screen-lg m-0 sm:m-10 bg-white shadow sm:rounded-lg flex justify-center flex-1"
+			>
+				<div class="lg:w-1/2 xl:w-5/12 sm:p-12">
+					<div class="flex flex-col items-center">
+						<div class="w-full">
+							<div class="flex flex-col items-center">
+								<img src="public/Solo logo_Mesa de trabajo 1.png" class="mb-5 w-8 h-auto" alt="" srcset="">
+								<h1
+									class="w-full max-w-xs text-3xl text-gray-800 text-center mb-4"
+									style="font-family: 'ClashDisplay-Bold';"
+								>
+									Bienvenido!
+									<br />
+									<span
+										style="font-family: 'ClashDisplay-Light';"
+										>Iniciar Sesión</span
+									>
+								</h1>
+							</div>
+
+							<div class="mx-30">
+								<form action="/inicio">
+									<input
+										class="w-full px-8 py-3 rounded-lg bg-gray-300 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
+										type="email"
+										placeholder="Username"
+									/>
+									<input
+										class="w-full px-8 py-3 rounded-lg bg-gray-300 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
+										type="email"
+										placeholder="Email"
+									/>
+									<input
+										class="w-full px-8 py-3 rounded-lg bg-gray-300 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
+										type="password"
+										placeholder="Contraseña"
+									/>
+									<button
+										class="mt-5 mb-7 bg-red-700 text-white w-full py-3 rounded-lg hover:bg-red-900 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none"
+										style="font-family:'ClashDisplay-Semibold'"
+									>
+										<svg
+											class="w-6 h-6 -ml-2"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										>
+											<path
+												d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"
+											></path>
+											<circle cx="8.5" cy="7" r="4"></circle>
+											<path d="M20 8v6M23 11h-6"></path>
+										</svg>
+										<span class="ml-3">Entrar</span>
+									</button>
+								</form>
+							</div>
+							<div class="">
+								<a href="/register" class=" text-zinc-600 text-center">No tienes cuenta? <span class="text-gray-800 hover:text-gray-700 cursor-pointer">Registrate</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex-1 bg-green-100 text-center hidden lg:flex w-full bg-center bg-no-repeat bg-cover" style="background-image: url('public/img-login.jpg');"></div>
+			</div>
+	</div>
+</Layout>
